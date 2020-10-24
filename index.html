@@ -4,103 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+     <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
-    <title>Doros Haircuts</title>
+    <title>Doros Cuts</title>
 </head>
-
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-    <!--Homepage section-->
+<!--Nav bar-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html"><em>Doros cuts</em></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--end Nav Bar-->
+
+<!--Home-->
+
     <div id="home">
-
-
-        <!--beggining Navigation-->
-
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="index.html"><em>Doros Haircuts</em></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--Img slider-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url(img/haircut-three.jpeg);">
-                    <div class="carousel-caption" text-center>
-                        <h1>Doros Haircuts</h1>
-                        <h3>Best new Barber in Saint Paul</h3>
-                        <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Book Appointment</a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url(img/haircut-two.jpeg);"></div>
-                <div class="carousel-item" style="background-image: url(img/haircut-one.jpeg);"></div>
-                <div class="carousel-item" style="background-image: url(img/haircut-four.jpeg);"></div>
-
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
+        <div class="landing-text">
+            <h1>DOROS CUTS</h1>
+            <h3>Best Barber in Saint Paul</h3>
+            <a role="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#reserveModal">Book Appointment</a>
         </div>
-        <!--end img slider-->
         <div id="reserveModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
-                        <h3 class="modal-title">Book Appointment</h4>
+                    <div class="modal-header bg-success text-white">
+                        <h3 class="modal-title">Book Appointment</h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
                             <form>
                                 <div class="form-group row">
-                                    <label for="firstName" class="text-primary col-sm-6 col-form-label">First Name</label>
+                                    <label for="firstName" class="text-success col-sm-6 col-form-label">First Name</label>
                                     <div class="col">
                                         <input type="firstName" class="form-control" id="firstName" name="firstName" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="lastName" class=" text-primary col-sm-6 col-form-label">Last Name</label>
+                                    <label for="lastName" class=" text-success col-sm-6 col-form-label">Last Name</label>
                                     <div class="col">
                                         <input type="lastName" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <!-- Date -->
                                 <div class="form-group row">
-                                    <label for="date" class="text-primary col-sm-6 col-form-label">Date</label>
+                                    <label for="date" class="text-success col-sm-6 col-form-label">Date</label>
                                     <div class="col">   
                                         <input type="date" class="form-control" id="date" name="date" placeholder="Date" />
                                     </div>
@@ -108,7 +82,7 @@
                                 <!-- Search Button -->
                                 <div class="form-group row">
                                     <div class="col">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-success">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -117,16 +91,73 @@
                 </div>
             </div>
         </div>
-    ​<!--Log info-->
-    </div><!--End Homepage-->
+    </div>
+<!--end home-->
 
-    <!--Begin Serivces section-->
+<!--Services-->
 
-    <div id="services">
-       
-    </div><!--End Serivices section-->
+<div id="services" class="offset">
 
+<!--Jumbotron-->
 
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h3 class="heading">Services</h3>
+                    <div class="heading-underline"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+<!--End jumbotron-->
+
+    <div class="container">
+        <div class="row row-content mr-auto">
+            <div class="col-sm-8">
+                <div class="card">
+                    <h3 class="card-header bg-success text-white">Haircuts</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Men's haircut</dt>
+                            <dd class="col-6">$25</dd>
+                            <dt class="col-6">Kid's haircut</dt>
+                            <dd class="col-6">$15</dd>
+                            <dt class="col-6">Beard and Mustache Trim</dt>
+                            <dd class="col-6">$15</dd>
+                            <dt class="col-6">Haircut + Beard and Mustanche Trim</dt>
+                            <dd class="col-6">$30</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <h3 class="text-success text-sm-right">Pontential deals</h3>
+                <hr />
+                <p class="d-non s-sm-block"><b>I offer many kind of deals depending on if you are a new customer or if you are a loyal customer</b></p>
+            </div>
+        </div>
+        <div class="row row-content ml-auto">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header bg-success text-white">Types Of deals</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">First Time Guest</dt>
+                            <dd class="col-6">$15</dd>
+                            <dt class="col-6">Loyal customer</dt>
+                            <dd class="col-6">Always negotiable</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Serivices section-->
 
     
 
@@ -143,17 +174,13 @@
 
 
 
-
-
-
-
-
-
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 
 </body>
