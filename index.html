@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css" />
      <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -97,72 +98,105 @@
 <!--Services-->
 
 <div id="services" class="offset">
-    <div class="container">
+
+    <div class="container-fluid text-center py-5 mx-0">
         <div class="row row-content">
             <div class="col text-center">
                 <h2 class="header text-success">Services</h2>
-                <hr />
             </div>
         </div>
-        <div class="row">
-            <div class="section">
-                    <div class="row row-content align-items-center">
-                        <div class="logo-wrapper col-12 col-sm-3 col-md-3">
-                                <img src="img/icon-logo-one.png"><br />
-                                <b>Haircut</b><br />
-                                $25.00
-                        </div>
-                        <div class="logo-wrapper col-12 col-sm-3 col-md-3">
-                                <img src="img/icon-logo-two.png"><br />
-                                <b>Shave</b></br>
-                                $10.00
-                        </div>
-                        <div class="logo-wrapper col-12 col-sm-3 col-md-3">
-                                <img src="img/icon-haircut-three.png"><br />
-                                <b>Haircut and Shave</b><br />
-                                $30.00
-                        </div>
-                        <div class="logo-wrapper col-12 col-sm-3 col-md-3">
-                                <img src="img/icon-haircut-four.png"><br />
-                                <b>Beard Trim</b><br />
-                                $15.00
-                        </div>
-                    </div>
+            <div class="row row-content pt-4 align-items-center">
+                <div class="logo-wrapper col-md-3 text-center">
+                        <img src="img/icon-logo-one.png"><br />
+                        <b>Haircut</b><br />
+                        $25.00
+                </div>
+                <div class="logo-wrapper col-md-3 text-center">
+                        <img src="img/icon-logo-two.png"><br />
+                        <b>Shave</b></br>
+                        $10.00
+                </div>
+                <div class="logo-wrapper col-md-3 text-center">
+                        <img src="img/icon-haircut-three.png"><br />
+                        <b>Haircut and Shave</b><br />
+                        $30.00
+                </div>
+                <div class="logo-wrapper col-md-3 text-center">
+                        <img src="img/icon-haircut-four.png"><br />
+                        <b>Beard Trim</b><br />
+                        $15.00
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h4>Cash Only!</h4>
+                    <p>A first time customer the price is negotiable</p>
+                    <a role="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#reserveModal">Book Appointment</a>
+                </div>
 
+            </div>
         </div>
     </div>
-</div>
-
 <!--About-->
 <div id="about" class="offset">
-    <div class="container-fluid">
-        <div class="row row-content">
-            <div class="col text-center">
-                <h2 class="header text-success">About</h2>
-                <hr />
-            </div>
-        </div>
-        <div class="row row-content align-items-center">
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrump Trail thumbnail"/>
-                    <div class="media-body align-self-center">
-                        <h3 class="header text-success">Your Barber</h3>
-                        <p class="d-non s-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="jumbotron text-center pt-5 mb-0">
+        <h2 class="heading">About</h2>
 
 
+        <div class="row justify-contet-center mt-5">
+            <div class="col-md-6 col-lg-4 about pb-4 pb-lg-2">
+                <h4 class="text-uppercase pt-3 pb-2">How I oparate</h4>
+                <p class="lead">If you need a haircut you as a customer can either come to my place after booking an appointment, or I can come to you it is up to you as a customer.</p>
+            </div>
+        
+            <div class="col-md-6 col-lg-4 about pb-4 pb-lg-2">
+                <h4 class="text-uppercase pt-3 pb-2">My core values</h4>
+                <blockquote class="blockquote card-body">
+                    <p class="mb-0">“If you look good, you feel good, If you feel good, you play good, If you play good, they pay good.”</p>
+                    <footer class="blockquote-footer text-white">Deion Sanders,
+                        <cite title="Source Title">"Quotefancy"</cite>
+                    </footer>
+                </blockquote><br />
+                <p class="lead">That is a quote that I beleive in when I am working on your hair.At the end of the day the way you look like decide how you day is going to be so I always do all I can to make sure you are looking your best.</p>
+            </div>
+            <div class="col-md-6 col-lg-4 about pb-4 pb-lg-2">
+                <h4 class="text-uppercase pt-3 pb-2">Availabilty</h4>
+                <p class="lead">I try to work around your schedule.I always try to be available almost everyday as long as you contact me to <b>book an appointment</b></p>
+            </div>
+        </div>
     </div>
 </div>
-
 
 
 <!--End About-->
+<div id="contacts" class="offset">
+
+    <div class="container-fluid footer">
+        <div class="row pt-4 pb-5 justify-content-center">
+            <div class="col-sm-11 col-md-9 col-lg-6 text-light text-center">
+                <a class="navbar-brand" href="index.html"><em>Doros cuts</em></a>
+                <blockquote class="blockquote card-body">
+                    <p class="mb-0">“If you look good, you feel good, If you feel good, you play good, If you play good, they pay good.”</p>
+                    <footer class="blockquote-footer text-white">Deion Sanders,
+                        <cite title="Source Title">"Quotefancy"</cite>
+                    </footer>
+                </blockquote>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--contanct-->
+<!--end contact-->
     
 
 
